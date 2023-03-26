@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    min-height: 7rem;
+    background-color: var(--brown);
+  }
+}
+
+.cart {
+  position: relative;
+  &__amount {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    right: 1rem;
+    background-color: var(--white);
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color:var(--black);
+  }
+}
+
+.logo {
+  &__title {
+    font-size: 5rem;
+    line-height: 5rem;
+    font-family: 'Parisienne';
+    letter-spacing: 0.5rem;
+  }
+}

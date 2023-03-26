@@ -1,0 +1,30 @@
+{
+    "plugins": [ "import", "@typescript-eslint", "@typescript-eslint/eslint-plugin"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+    },
+    "rules": {
+        "no-debugger": "off",
+        "no-console": 0,
+        "class-methods-use-this": "off",
+        "@typescript-eslint/no-explicit-any": 2,
+        "@typescript-eslint/explicit-function-return-type": ["error"]
+    },
+    "ignorePatterns": [
+        "webpack.config.js",
+        "webpack.dev.config.js",
+        "webpack.prod.config.js",
+        "dist/*"
+    ]
+}

@@ -1,0 +1,133 @@
+.content {
+  width: 80vw;
+  padding: 0 3rem;
+  &__heading {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+  }
+  &__amount {
+    font-size: 1.5rem;
+  }
+  &__line {
+    border: 0.1rem solid #937d68;
+  }
+}
+
+.content__select {
+  font-size: 1.5rem;
+}
+
+.box {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__no-cards {
+    font-size: 2.7rem;
+    line-height: 2.7rem;
+  }
+}
+
+.card {
+  background-color: var(--light);
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0 1.5rem 0.6rem rgba(0,0,0,0.3);
+  transition: .3s;
+  max-width: 25rem;
+  position: relative;
+  &__img {
+    width: 25rem;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  &__rare-icon {
+    position: absolute;
+    z-index: 1;
+    left: 20.1rem;
+    width: unset;
+    height: unset;
+  }
+
+  &__info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:0.6rem;
+  }
+
+  &__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+  }
+
+  &__add-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__master {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
+
+  &__color-btn {
+    width:1.5rem;
+    height:1.5rem;
+    border-radius: 50%;
+  }
+
+  &__more-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    font-size: 1.5rem;
+  }
+
+  &__size {
+    font-size: 1.3rem;
+  }
+
+  &__cart-btn {
+    width: 50%;
+    margin: 0 auto;
+    background-color: var(--light);
+    border:0.2rem solid var(--brown);
+    border-radius: 1rem;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    transition: .3s;
+
+    &:hover {
+    border-color: var(--mint);
+    box-shadow: 0 0.5em 0.5em -0.4em var(--mint);
+    transform: translateY(-0.25em);
+    }
+    &--active {
+      background-color: var(--mint);
+      border-color: var(--mint)
+    }
+  }
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+@media screen and(max-width:768px) {
+  .content{
+    width: unset;
+  }
+}
